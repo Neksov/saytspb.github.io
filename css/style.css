@@ -347,6 +347,13 @@ input {
   max-width: 1256px;
   margin: auto; }
 
+.header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: black; }
+
 body h1 {
   font-size: 60px;
   color: red; }
