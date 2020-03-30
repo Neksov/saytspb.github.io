@@ -308,19 +308,11 @@ template {
   display: none; }
 
 @font-face {
-  font-family: 'Futura Book';
-  src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu-Regular.woff") format("woff"), url("../fonts/Ubuntu-Regular.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: wrap; }
-
-@font-face {
-  font-family: 'Futura Demi';
-  src: url("../fonts/futura/FuturaDemiC.woff") format("woff"), url("../fonts/futura/FuturaDemiC.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: wrap;
-  font-display: swap; }
 
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
@@ -333,8 +325,8 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Futura Book', sans-serif;
-  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
   width: 100%;
   max-width: 100%;
   overflow-x: hidden; }
@@ -343,20 +335,28 @@ input {
   outline: none; }
 
 .container {
-  width: 85%;
-  max-width: 1011px;
+  width: 100%;
+  max-width: 1169px;
   margin: auto; }
 
+.container2__back {
+  max-width: 1920px;
+  width: 100%;
+  margin: auto;
+  height: 1331px;
+  background: url("../img/hero/hero_back.png") no-repeat center/cover; }
+
 .btn {
-  padding: 11px 41px;
+  padding: 0.8rem 1.99rem;
   border: none;
   border-radius: 30px;
-  font-size: 0.85rem; }
+  font-size: 1rem;
+  font-weight: 500; }
   .btn:hover {
     cursor: pointer; }
   .btn--primary {
-    background-color: #E3B873;
-    color: #fff;
+    background-color: #ff5a3c;
+    color: #ffffff;
     -webkit-transition: -webkit-box-shadow 0.3s;
     transition: -webkit-box-shadow 0.3s;
     transition: box-shadow 0.3s;
@@ -368,11 +368,11 @@ input {
     outline: none; }
 
 .header {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   width: 100%;
-  padding-top: 40px; }
+  padding-top: 2rem; }
 
 .menu {
   display: -webkit-box;
@@ -384,6 +384,8 @@ input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .menu__logo {
+    margin-right: 1.1rem; }
 
 .logo {
   display: -webkit-box;
@@ -396,26 +398,30 @@ input {
   text-decoration: none;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
-  .logo img {
-    width: 50px;
-    height: 50px; }
+  align-items: center;
+  margin-right: 11rem;
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.1875rem;
+  letter-spacing: 1.02px;
+  cursor: pointer;
+  color: #2e2e2d; }
 
 .nav__item {
   position: relative;
+  color: #38393b;
   text-decoration: none;
   text-transform: uppercase;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   display: inline-block;
-  margin-right: 50px; }
+  margin-right: 1.2rem; }
   .nav__item::after {
     position: absolute;
     content: "";
     display: block;
     height: 2px;
-    background-color: red;
-    height: 5px;
+    background-color: #ff5a3c;
     width: 0%;
     left: 50%;
     -webkit-transition: width .3s ease-in-out;
@@ -426,12 +432,15 @@ input {
     width: 80%; }
 
 .phone {
-  color: #181818;
-  font-size: 15px;
-  text-decoration: none; }
+  color: #38393b;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 2.333rem;
+  cursor: pointer; }
 
 .contacts__phone {
-  margin-right: 75px; }
+  margin-right: 2.8rem; }
 
 .hero {
   position: relative;
@@ -448,35 +457,38 @@ input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 100px;
   height: 100vh;
-  color: #181818; }
+  color: #38393b; }
   .hero__content {
     position: relative;
-    max-width: 47.85rem;
-    margin-top: -3rem; }
-  .hero .title {
-    font-family: 'Yeseva One', cursive;
-    text-transform: uppercase;
-    font-size: 2.49rem;
-    line-height: 1.2;
-    font-weight: 400; }
-    .hero .title--primary {
-      color: #E3B873; }
+    max-width: 40.25rem;
+    margin-top: 20.25rem; }
   .hero__text {
-    font-size: 1.38rem;
-    max-width: 500px;
-    line-height: 131%;
-    margin-top: 0.90rem; }
+    max-width: 36.187rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.812rem;
+    margin-bottom: 1.5rem;
+    margin-top: 15px; }
   .hero__btn {
-    margin-top: 1.45rem;
-    margin-right: 19px; }
+    margin-top: 0.6rem;
+    margin-right: 19px;
+    padding: 1rem 2.5rem; }
   .hero__social {
     position: absolute;
     left: 0;
     top: 0;
-    margin-left: 70px;
+    width: 80px;
     height: 100%; }
+
+.title {
+  font-family: 'Ubuntu';
+  font-size: 3.85rem;
+  font-weight: 700;
+  line-height: 4.75rem;
+  letter-spacing: -1px; }
+  .title--primary {
+    color: #ff5a3c; }
 
 .social {
   display: -webkit-box;
@@ -489,24 +501,33 @@ input {
   -ms-flex-align: center;
   align-items: center; }
   .social__link {
+    position: absolute;
+    margin-top: 26.6rem;
+    margin-left: 1.775rem;
     display: grid;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-transition: 0.6s;
-    transition: 0.6s;
-    margin-top: 300px; }
+    cursor: pointer; }
     .social__link img {
-      width: 50px;
-      height: 50px; }
-    .social__link::after {
-      content: "";
-      width: 250px;
-      height: 1px;
-      background-color: #E3B873;
-      margin-right: 150px;
-      -webkit-transform: rotate(90deg);
-      transform: rotate(90deg); }
+      padding-top: 1.8rem; }
+  .social::before {
+    content: "";
+    width: 4px;
+    height: 38.75rem;
+    border-radius: 2px;
+    background-color: #ff5a3c;
+    margin-left: 3.7rem;
+    margin-top: 4rem; }
+
+.video {
+  margin-top: 16.25rem;
+  background: #fff url(../img/video/video-bg.png) no-repeat center/cover;
+  height: 39.56rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto; }
+  .video__play {
+    padding-top: 8rem;
+    position: relative;
+    margin: auto;
+    cursor: pointer; }

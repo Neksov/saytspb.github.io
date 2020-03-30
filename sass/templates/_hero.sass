@@ -4,56 +4,58 @@
   flex-direction: column
   justify-content: center
   align-items: center
-  padding-top: 100px
   height: 100vh
   color: $black
-
   &__content
-    position: relative //ставит на передний план турецкий....
-    max-width: 47.85rem
-    margin-top: -3rem
-  .title
-    font-family: 'Yeseva One', cursive
-    text-transform: uppercase
-    font-size: 2.49rem
-    line-height: 1.2
-    font-weight: 400
-    &--primary
-      color: $primary
+    position: relative
+    max-width: 40.25rem
+    margin-top: 20.25rem
   &__text
-    font-size: 1.38rem
-    max-width: 500px
-    line-height: 131%
-    margin-top: 0.90rem
+    max-width: 36.187rem
+    font-size: 1.25rem
+    font-weight: 300
+    line-height: 1.812rem
+    margin-bottom: 1.5rem
+    margin-top: 15px
   &__btn
-    margin-top: 1.45rem
+    margin-top: 0.6rem
     margin-right: 19px
+    padding: 1rem 2.5rem
+
   &__social
     position: absolute
     left: 0
     top: 0
-    margin-left: 70px
+    width: 80px
     height: 100%
+.title
+  font-family: 'Ubuntu'
+  font-size: 3.85rem
+  font-weight: 700
+  line-height: 4.75rem
+  letter-spacing: -1px
+  &--primary
+    color: $primary
 .social
   display: flex
   justify-content: center
   align-items: center
   &__link
+    position: absolute
+    margin-top: 26.6rem
+    margin-left: 1.775rem
     display: grid
-    align-items: center
-    justify-content: center
-    transition: 0.6s
-    margin-top: 300px
+    cursor: pointer
     img
-      width: 50px
-      height: 50px
-    &::after /* элемент сбоку инстаграмма */
-      content: ""
-      width: 250px
-      height: 1px
-      background-color: $primary
-      margin-right: 150px
-      transform: rotate(90deg)
+      padding-top: 1.8rem
+    
 
 
-
+  &::before /* элемент сбоку инстаграмма */
+    content: ""
+    width: 4px
+    height: 38.75rem
+    border-radius: 2px
+    background-color: $primary
+    margin-left: 3.7rem
+    margin-top: 4rem

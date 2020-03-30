@@ -1,37 +1,44 @@
 .header 
-  position: absolute
+  position: relative
   left: 0
   top: 0
   width: 100%
-  padding-top: 40px
+  padding-top: 2rem 
 .menu
   display: flex
   justify-content: space-between
   align-items: center
+  &__logo
+    margin-right: 1.1rem
 .logo
   display: flex
   justify-content: center
   text-transform: uppercase
   text-decoration: none
   align-items: center
-  img
-    width: 50px
-    height: 50px
+  margin-right: 11rem
+  font-size: 1.625rem
+  font-weight: 700
+  line-height: 1.1875rem
+  letter-spacing: 1.02px
+  cursor: pointer
+  color: $dark
+ 
 .nav
   &__item
     position: relative
+    color: $black
     text-decoration: none
     text-transform: uppercase
     transition: 0.2s
     display: inline-block
-    margin-right: 50px
+    margin-right: 1.2rem
     &::after //нижнее подчеркивание
       position: absolute
       content: ""
       display: block
       height: 2px
-      background-color: red
-      height: 5px
+      background-color: $primary
       width: 0%
       left: 50%
       transition: width .3s ease-in-out
@@ -41,9 +48,12 @@
         width: 80%
 .phone
   color: $black
-  font-size: 15px
   text-decoration: none
+  font-size: 1.125rem
+  font-weight: 700
+  line-height: 2.333rem
+  cursor: pointer
   
 .contacts
   &__phone
-    margin-right: 75px
+    margin-right: 2.8rem
