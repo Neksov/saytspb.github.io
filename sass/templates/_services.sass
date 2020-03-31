@@ -1,0 +1,177 @@
+.services
+  margin-top: -3rem
+  &-title
+    text-align: center
+    color: $black
+    font-size: 42px
+    font-weight: 700
+    line-height: 37.33px
+    margin-bottom: 27px
+  &__description 
+    text-align: center
+    color: $black
+    font-size: 16px
+    font-weight: 400
+    line-height: 22px
+    margin: auto
+    margin-bottom: 58px
+    max-width: 800px
+  &__blocks 
+    display: flex
+    flex-wrap: wrap
+    flex-direction: row
+    justify-content: space-around
+
+  &__block 
+    display: flex
+    position: relative
+    background-color: $light
+    flex-direction: column
+    align-items: flex-start
+    flex-basis: 30%
+    padding-top: 33px
+    padding-bottom: 40px
+    padding-left: 23px
+    padding-right: 26px
+    box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05)
+    border-radius: 5px
+    cursor: pointer
+    &-title 
+      color: $black
+      font-size: 26px
+      font-weight: 500
+      line-height: 37.33px
+      margin-bottom: 30px
+    &__description 
+      color: $black
+      font-size: 16px
+      font-weight: 300
+      line-height: 25.33px
+    &__image
+      margin-bottom: 29px
+
+
+    &:nth-child(1) 
+      margin-bottom: 39px
+      &:nth-child(1)
+        &::after 
+          position: absolute
+          content: ''
+          bottom: 0
+          width: 0%
+          left: 50%
+          height: 5px
+          background-color: $primary
+          border-radius: 0 0 5px 5px
+          transition: width .3s ease-in-out
+          transform: translateX(-50%)
+        &:hover 
+          &:after 
+            width: 100%
+
+    &:nth-child(2) 
+      margin-bottom: 39px
+      &:nth-child(2)
+        &::after
+          position: absolute
+          content: ''
+          bottom: 0
+          width: 0%
+          left: 50%
+          height: 5px
+          background-color: $primary
+          border-radius: 0 0 5px 5px
+          transition: width .3s ease-in-out
+          transform: translateX(-50%)
+        &:hover 
+          &:after 
+            width: 100%
+
+    &:nth-child(3) 
+      margin-bottom: 39px
+      &:nth-child(3)
+        &::after 
+          position: absolute
+          content: ''
+          bottom: 0
+          width: 0%
+          left: 50%
+          height: 5px
+          background-color: $primary
+          border-radius: 0 0 5px 5px
+          transition: width .3s ease-in-out
+          transform: translateX(-50%)
+        &:hover 
+          &:after 
+            width: 100%
+
+    &:nth-child(4) 
+      margin-bottom: 13rem
+      &:nth-child(4)
+        &::after 
+          position: absolute
+          content: ''
+          bottom: 0
+          width: 0%
+          left: 50%
+          height: 5px
+          background-color: $primary
+          border-radius: 0 0 5px 5px
+          transition: width .3s ease-in-out
+          transform: translateX(-50%)
+        &:hover 
+          &:after 
+            width: 100%
+    
+    &:nth-child(5) 
+      margin-bottom: 13rem
+      margin-right: 24.5rem
+      &:nth-child(5)
+        &::after 
+          position: absolute
+          content: ''
+          bottom: 0
+          width: 0%
+          left: 50%
+          height: 5px
+          background-color: $primary
+          border-radius: 0 0 5px 5px
+          transition: width .3s ease-in-out
+          transform: translateX(-50%)
+        &:hover 
+          &:after 
+            width: 100%
+.Multilpy2
+  position: absolute
+  left: 7.975rem
+  top: 192rem
+  z-index: 1
+.rectangle
+  position: absolute
+  left: 0
+  top: 180rem
+  z-index: 0
+  max-width: 31.25rem
+  height: 38.375rem
+.circle
+  position: absolute
+  left: 19.995rem
+  top: 211.4rem
+.angle 
+  position: absolute
+  top: 170.5rem 
+  right: 19.5rem
+  z-index: -1
+
+
+.circle2
+  position: absolute
+  top: 199rem
+  right: 41.5rem
+  z-index: -1
+
+.line2
+  position: absolute
+  top: 190.3rem
+  right: -6.25rem
+
