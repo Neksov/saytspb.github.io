@@ -1,8 +1,9 @@
 <?php
 
 $userName = $_POST['userName'];
+$userEmail = $_POST['userEmail'];
 $userPhone = $_POST['userPhone'];
-$userQuestion = $_POST['userQuestion'];
+$userMessage = $_POST['userMessage'];
 
 
 
@@ -29,9 +30,12 @@ try {
     //Recipients
     $mail->setFrom('n2v@list.ru');
     $mail->addAddress('n2vvadim@gmail.com');     // Add a recipient
-
+    if (isset($_POST['userEmail'] )) {
+        $mail->addAddress($_POST['userEmail'] );
+        }//для отправки на ящик заполнителя
+    // Content
     $mail->Subject = 'Новая заявка с сайта';
-    $mail->Body    = "Имя пользователя: ${userName}, его телефон: ${userPhone}. Его вопрос: ${userQuestion}";
+    $mail->Body    = "Имя пользователя: ${userName}. Его(Её) е-маил ${userEmail}. Его(Её) номер телефон: ${userPhone}. Его(Её) сообщение: ${userMessage}";
 
 
 

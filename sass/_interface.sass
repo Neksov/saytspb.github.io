@@ -10,6 +10,10 @@
     background-color: $primary
     color: $light
     transition: box-shadow 0.3s
+  &--light
+    background-color: $light
+    color: $primary
+    transition: box-shadow 0.3s
   &:hover
     box-shadow: none
   &:active, &:focus 
@@ -18,7 +22,7 @@ label
   &.invalid
     position: absolute
     margin-top: 50px
-    color: $primary
+    color: $black
 input
   &.invalid
     border-bottom: 1px solid $primary

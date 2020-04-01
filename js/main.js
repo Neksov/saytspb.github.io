@@ -169,14 +169,18 @@ $(document).ready(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
-      checkBoxFooter: "required",
-      userQuestion: {
+      userMessage: {
         required: true,
         minlength: 10,
         maxlength: 30
-      }
+      },
       // правило- обьект
+      userEmail: {
+        required: true,
+        email: true
+      },
+      userPhone: "required",
+
     },
     //сообщения
     messages: {
@@ -185,13 +189,16 @@ $(document).ready(function () {
         minlength: "Имя не короче 2 символов",
         maxlength: "Имя не длиньше 15 символов"
       },
-      userPhone: "Телефон обязателен",
-      checkBoxFooter: "Подтвердите свое согласие",
 
-      userQuestion: {
-        required: "Вопрос обязателен",
-        minlength: "Вопрос не короче 10 символов",
-        maxlength: "Вопрос не длиньше 30 символов"
+      userPhone: "Телефон обязателен",
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате: ivanov@gmail.com"
+      },
+      userMessage: {
+        required: "Сообщение обязателено",
+        minlength: "Сообщение не короче 10 символов",
+        maxlength: "Сообщение не длиньше 30 символов"
       }
     },
     //отправка формы через аякс
@@ -201,8 +208,9 @@ $(document).ready(function () {
         url: "sendFooter.php",
         data: $(".footer__form").serialize(), //Преобразует данные формы в строку, пригодную для использования в URL
         success: function (response) {
-          //footer.on('.modalSend');
+          //modal.on('.modalSend');
           $(form)[0].reset(); // чистит поля после отправки формы
+          modal.removeClass("modal--visible");
           $(".modalSend").fadeIn();
         }
       });

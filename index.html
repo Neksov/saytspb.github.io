@@ -18,14 +18,13 @@
     <img data-src="img/bg1.png" src="a" alt="Фон" class="header__bg" />
     <div class="container">
       <div class="menu">
-        <a href="http://www.saytspb.ru/index.html" class="logo"><img data-src="img/logo/logo.png" src="a"
-            class="menu__logo" alt="Logo" />
+        <a href="index.html" class="logo"><img data-src="img/logo.png" src="a" class="menu__logo" alt="Logo" />
           saytspb</a>
         <nav class="nav men__nav">
-          <a href="#" class="nav__item">Продвижение</a>
-          <a href="#" class="nav__item">Аудит</a>
-          <a href="#" class="nav__item">Цены</a>
-          <a href="#" class="nav__item">Контакты</a>
+          <a href="#hero" class="nav__item">Продвижение</a>
+          <a href="#statistics" class="nav__item">Аудит</a>
+          <a href="#price" class="nav__item">Цены</a>
+          <a href="#footer" class="nav__item">Контакты</a>
         </nav>
         <!-- /.menu nav__menu -->
         <div class="contacts menu__contacts">
@@ -52,7 +51,7 @@
       </div>
       <img src="img/SEO.png" alt="seo" class="seo" />
       <div class="container">
-        <div class="content hero__content">
+        <div class="content hero__content" id="hero">
           <h1 class="title hero__title">
             Продвижение Cайтов <br />
             <span class="title--primary">в Санкт-Петербурге</span>
@@ -74,7 +73,7 @@
       </div>
     </section>
     <!--hero-->
-    <section class="statistics">
+    <section class="statistics" id="statistics">
       <div class="container statistics__container">
         <div class="statistics__description">
           <div class="col">
@@ -213,12 +212,12 @@
       <!--<img src="img/line2.png" alt="Линии" class="line2" />-->
     </section>
     <!--services-->
-    <section class="price" id="price">
+    <section class="price">
       <div class="container">
         <div class="price__center">
           <div class="price__half">
             <div class="price__info">
-              <h2 class="price-title">Узнать стоимость</h2>
+              <h2 class="price-title" id="price">Узнать стоимость</h2>
               <form action="sendPrice.php" method="POST" class="form price__form">
                 <div class="input-group price__input-group"><label for="price-user-name"
                     class="label form__label price__label">ИМЯ</label> <input type="text" autocomplete="off"
@@ -484,6 +483,7 @@
               </div>
             </div>
           </div><!-- If we need navigation buttons -->
+
           <div class="swiper-button-prev news-prev swiper-button-disabled" tabindex="0" role="button"
             aria-label="Previous slide" aria-disabled="true"></div>
           <div class="swiper-button-next news-next" tabindex="0" role="button" aria-label="Next slide"
@@ -503,7 +503,54 @@
     </section>
     <!--news-->
   </main>
+  <footer class="footer" id="footer">
+    <div class="footer__container">
+      <div class="footer__row">
+        <div class="footer__description">
+          <h2 class="footer-title">Остались вопросы? Напишите нам!<br>Отправте Ваше сообщение через форму или <a
+              href="mailto:n2v@list.ru" class="title--primary">e-mail</a>.</h2>
+          <div class="footer__contacts">
+            <div class="footer__contacts-group"><strong class="footer__contacts-title">Адресс</strong> <span
+                class="footer__contacts__text footer__contacts__text__main">Город Санкт-Петербург</span> <span
+                class="footer__contacts__text footer__contacts__text__main">Улица Мурзинская дом 11</span> <span
+                class="footer__contacts__text footer__contacts__text__main">+7(812)-992-10-30</span> <span
+                class="footer__contacts__text footer__contacts__text__main">info@saytspb.ru</span></div>
+            <div class="footer__contacts-group footer__contacts-group__small">
+              <div class="work__day"><strong class="footer__contacts-subtitle">Рабочие дни</strong> <span
+                  class="footer__contacts__text">Понедельник-Пятница</span></div>
+              <div class="wekeend"><strong class="footer__contacts-subtitle">Выходные</strong> <span
+                  class="footer__contacts__text">Суббота-Воскресенье</span></div><strong
+                class="footer__contacts-subtitle">09:00-18:00</strong>
+            </div>
+          </div>
+        </div>
+        <form action="sendFooter.php.php" method="POST" class="form footer__form">
+          <div class="input-group footer__input-group"><label for="footer-user-name"
+              class="label form__label footer__label">ИМЯ</label> <input type="text" autocomplete="off" name="userName"
+              class="input form__input footer__input" id="footer-user-name" placeholder="Иван Иванов"></div>
+          <div class="input-group footer__input-group"><label for="footer-user-email"
+              class="label form__label footer__label">E-MAIL</label> <input type="email" autocomplete="off"
+              name="userEmail" class="input form__input footer__input" id="footer-user-email"
+              placeholder="ivanov@gmail.com"></div>
+          <div class="input-group footer__input-group"><label for="footer-user-phone"
+              class="label form__label footer__label">ТЕЛЕФОН</label> <input type="tel" autocomplete="off"
+              name="userPhone" class="input form__input footer__input" id="footer-user-phone"
+              placeholder="+7 999 888-88-88"></div>
+          <div class="input-group footer__input-group"><label for="footer-user-message"
+              class="label form__label footer__label">СООБЩЕНИЕ</label> <input type="text" autocomplete="off"
+              name="userMessage" class="input form__input footer__input" id="footer-user-message"
+              placeholder="Введите Ваше сообщение"></div><button class="btn btn--light footer__btn">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <img data-src="img/curve3.png" src="a" alt="Кривая" class="curve3" />
 
+    <div class="footer__end">
+      <div class="footer__logo"><img data-src="img/logo2.png" src="f" alt="logo" class="footer__logo__image"> <a
+          href="index.html" class="footer__logo__logo">SAYTSPB</a> <strong class="footer__end__description">Copyright ©
+          2019. Все права защищены</strong></div>
+    </div>
+  </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
