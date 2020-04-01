@@ -1,0 +1,101 @@
+.news 
+  background-color: #e3fbdd
+  position: relative
+  padding-bottom: 13.4375rem
+  margin-top: -3.5rem
+  &-prev 
+    background: url("../img/prevnews.png")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 48px
+    width: 48px
+    top: auto
+    bottom: 130px
+    left: 20.3125rem
+    height: 28px
+  &-next 
+    background: url("../img/nextnews.png")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 48px
+    width: 48px
+    height: 28px
+    top: auto
+    left: 25rem
+    bottom: 130px
+  &__news 
+    position: relative
+  &-title 
+    text-align: center
+    color: #2c2c2d
+    font-size: 42px
+    font-weight: 700
+    line-height: 37.33px
+    padding-top: 62px
+    margin-bottom: 29px
+  &__text 
+    text-align: center
+    max-width: 800px
+    margin: auto
+    color: #2c2c2d
+    font-size: 16px
+    font-weight: 400
+    line-height: 22px
+    margin-bottom: 57px
+
+.swiper
+  &__news 
+    position: absolute
+    top: 24px
+    left: 24px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    background-color: $primary
+    padding: 16px 15px 15px 15px
+    border-radius: 5px
+    color: $light
+  &__swiper 
+    position: relative
+  &__number 
+    font-size: 14px
+    line-height: 18px
+    font-weight: 400
+
+.number 
+  font-size: 20px
+  font-weight: 700
+  line-height: 18px
+
+.card 
+  position: absolute
+  z-index: 99
+  left: 610px
+  top: -220px
+  background-color: $light
+  box-shadow: 0 0 10px 3px rgba(34, 34, 34, 0.05)
+  border-radius: 5px
+  padding: 31px 43px 31px 48px
+  max-width: 570px
+  height: 340px
+  margin-bottom: 92px
+  &-title 
+    color: #121111
+    font-size: 20px
+    font-weight: 500
+    line-height: 18px
+    margin-bottom: 32px
+  &__description 
+    color: #201f1f
+    font-size: 16px
+    font-weight: 300
+    line-height: 26.33px
+    max-width: 30rem
+    margin-bottom: 36px
+  &__btn 
+    padding: 15px 64px 17px 56px
+  &__text 
+    display: flex
+    flex-direction: column
+    align-items: flex-start

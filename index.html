@@ -1,304 +1,517 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <title>Продвижение сайтов</title>
-  </head>
 
-  <body>
-    <header class="header">
-      <img src="img/bg1.png" alt="a" class="header__bg" />
-      <div class="container">
-        <div class="menu">
-          <a href="http://www.saytspb.ru/index.html" class="logo"
-            ><img src="img/logo/logo.png" class="menu__logo" alt="Logo" />
-            saytspb</a
-          >
-          <nav class="nav men__nav">
-            <a href="#" class="nav__item">Продвижение</a>
-            <a href="#" class="nav__item">Аудит</a>
-            <a href="#" class="nav__item">Цены</a>
-            <a href="#" class="nav__item">Контакты</a>
-          </nav>
-          <!-- /.menu nav__menu -->
-          <div class="contacts menu__contacts">
-            <a href="tel:+78129921030" class="phone contacts__phone"
-              >+7(812)-992-10-30</a
-            >
-            <button class="btn contacts__btn btn--primary">
-              Заказать звонок
-            </button>
-          </div>
-          <!-- /.contacts menu__contacts -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/css/animate.min.css"
+    media="all" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <title>Продвижение сайтов</title>
+</head>
+
+<body>
+  <header class="header">
+    <img data-src="img/bg1.png" src="a" alt="Фон" class="header__bg" />
+    <div class="container">
+      <div class="menu">
+        <a href="http://www.saytspb.ru/index.html" class="logo"><img data-src="img/logo/logo.png" src="a"
+            class="menu__logo" alt="Logo" />
+          saytspb</a>
+        <nav class="nav men__nav">
+          <a href="#" class="nav__item">Продвижение</a>
+          <a href="#" class="nav__item">Аудит</a>
+          <a href="#" class="nav__item">Цены</a>
+          <a href="#" class="nav__item">Контакты</a>
+        </nav>
+        <!-- /.menu nav__menu -->
+        <div class="contacts menu__contacts">
+          <a href="tel:+78129921030" class="phone contacts__phone">+7(812)-992-10-30</a>
+          <button class="btn contacts__btn btn--primary">
+            Заказать звонок
+          </button>
+        </div>
+        <!-- /.contacts menu__contacts -->
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <img data-src="img/icons8_Multiply.png" src="a" alt="Multiply" class="Multiply" />
+      <div class="social hero__social">
+        <div class="social__link">
+          <a href="https://www.whatsapp.com/" target="_blank"><img data-src="img/hero/WhatsApp.png" src="a"
+              alt="WhatsApp" /></a>
+          <a href="https://www.viber.com/ru/" target="_blank"><img data-src="img/hero/Viber.png" src="a"
+              alt="Viber" /></a>
+          <a href="mailto:n2v@list.ru"><img data-src="img/hero/mail.png" src="a" alt="Mail" /></a>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="hero">
-        <img src="img/icons8_Multiply.png" alt="Multiply" class="Multiply" />
-        <div class="social hero__social">
-          <div class="social__link">
-            <a href="https://www.whatsapp.com/" target="_blank"
-              ><img src="img/hero/WhatsApp.png" alt="WhatsApp"
-            /></a>
-            <a href="https://www.viber.com/ru/" target="_blank"
-              ><img src="img/hero/Viber.png" alt="Viber"
-            /></a>
-            <a href="mailto:n2v@list.ru"
-              ><img src="img/hero/mail.png" alt="Mail"
-            /></a>
+      <img src="img/SEO.png" alt="seo" class="seo" />
+      <div class="container">
+        <div class="content hero__content">
+          <h1 class="title hero__title">
+            Продвижение Cайтов <br />
+            <span class="title--primary">в Санкт-Петербурге</span>
+          </h1>
+          <p class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          </p>
+          <button class="btn hero__btn btn--primary">
+            Обратный звонок
+          </button>
+        </div>
+        <img data-src="img/process.png" src="a" alt="process" class="process" />
+        <img data-src="img/3_line.png" src="a" alt="3 линии" class="line" />
+        <img data-src="img/curve.png" src="a" alt="Кривая" class="curve" />
+        <!-- /.hero__content -->
+      </div>
+    </section>
+    <!--hero-->
+    <section class="statistics">
+      <div class="container statistics__container">
+        <div class="statistics__description">
+          <div class="col">
+            <span class="statistics__number">11<br /></span>
+            <span class="statistics__text">Лет на рынке <br /></span>
+          </div>
+          <div class="col">
+            <span class="statistics__number">&gt;200<br /></span>
+            <span class="statistics__text statistics__text__full">Клиентов на раскрутке<br /></span>
+          </div>
+          <div class="col">
+            <span class="statistics__number">121%<br /></span>
+            <span class="statistics__text statistics__text__full">Присрост посещаемости</span>
+          </div>
+          <div class="col">
+            <span class="statistics__number">2200<br /></span>
+            <span class="statistics__text statistics__text__last-full">Заявок у клиентов</span>
           </div>
         </div>
-        <img src="img/SEO.png" alt="seo" class="seo" />
-        <div class="container">
-          <div class="content hero__content">
-            <h1 class="title hero__title">
-              Продвижение Cайтов <br />
-              <span class="title--primary">в Санкт-Петербурге</span>
-            </h1>
-            <p class="hero__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            </p>
-            <button class="btn hero__btn btn--primary">
-              Обратный звонок
-            </button>
-          </div>
-          <img src="img/process.png" alt="process" class="process" />
-          <img src="img/3_line.png" alt="3 линии" class="line" />
-          <img src="img/curve.png" alt="Кривая" class="curve" />
-          <!-- /.hero__content -->
+        <img data-src="img/video/statistics.png" src="a" alt="f" class="statistics__img" />
+      </div>
+    </section>
+    <!--statistics-->
+    <section class="video">
+      <a class="video__play" data-fancybox href="https://youtu.be/mAN4L9ch-z4"><img data-src="img/video/play_icon.png"
+          src="a" alt="play icon" /></a>
+    </section>
+    <!--video-->
+    <section class="advantages">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="advantages-title">Наши Преимущества</h2>
+          <p class="advantages__description">
+            Профессиональный подход - расплывчатая формулировка, которой давно
+            не принято доверять. Лучший способ рекламы - благоприятные отзывы
+            заказчиков и практические примеры работ, которые представлены
+            ниже.
+          </p>
         </div>
-      </section>
-      <section class="statistics">
-        <div class="container statistics__container">
-          <div class="statistics__description">
-            <div class="col">
-              <span class="statistics__number">11<br /></span>
-              <span class="statistics__text">Лет на рынке <br /></span>
-            </div>
-            <div class="col">
-              <span class="statistics__number">&gt;200<br /></span>
-              <span class="statistics__text statistics__text__full"
-                >Клиентов на раскрутке<br
-              /></span>
-            </div>
-            <div class="col">
-              <span class="statistics__number">121%<br /></span>
-              <span class="statistics__text statistics__text__full"
-                >Присрост посещаемости</span
-              >
-            </div>
-            <div class="col">
-              <span class="statistics__number">2200<br /></span>
-              <span class="statistics__text statistics__text__last-full"
-                >Заявок у клиентов</span
-              >
-            </div>
+        <div class="advantages__blocks">
+          <div class="advantages__block">
+            <img data-src="img/money.png" src="a" alt="money" class="advantages__block__image" />
+            <strong class="advantages__block-title">Работа без предоплаты</strong>
+            <span class="advantages__block__description">Оплата исключительно по факту результатов месячного
+              сотрудничества.</span>
           </div>
-          <img src="img/video/statistics.png" alt="f" class="statistics__img" />
-        </div>
-      </section>
-      <section class="video">
-        <a class="video__play" data-fancybox href="https://youtu.be/mAN4L9ch-z4"
-          ><img src="img/video/play_icon.png" alt="play icon"
-        /></a>
-      </section>
-      <section class="advantages">
-        <div class="container">
-          <div class="section-title">
-            <h2 class="advantages-title">Наши преимущества</h2>
-            <p class="advantages__description">
-              Профессиональный подход - расплывчатая формулировка, которой давно
-              не принято доверять. Лучший способ рекламы - благоприятные отзывы
-              заказчиков и практические примеры работ, которые представлены
-              ниже.
-            </p>
+          <div class="advantages__block">
+            <img data-src="img/human.png" src="a" alt="human" class="advantages__block__image" />
+            <strong class="advantages__block-title">Идивидуальный подход</strong>
+            <span class="advantages__block__description">Возможность сотрудничества по типовым алгоритмам или с
+              совместной разработкой индивидуального проекта
+              SEO-продвижения.</span>
           </div>
-          <div class="advantages__blocks">
-            <div class="advantages__block">
-              <img
-                src="img/money.png"
-                alt="money"
-                class="advantages__block__image"
-              />
-              <strong class="advantages__block-title"
-                >Работа без предоплаты</strong
-              >
-              <span class="advantages__block__description"
-                >Оплата исключительно по факту результатов месячного
-                сотрудничества.</span
-              >
-            </div>
-            <div class="advantages__block">
-              <img
-                src="img/human.png"
-                alt="human"
-                class="advantages__block__image"
-              />
-              <strong class="advantages__block-title"
-                >Идивидуальный подход</strong
-              >
-              <span class="advantages__block__description"
-                >Возможность сотрудничества по типовым алгоритмам или с
-                совместной разработкой индивидуального проекта
-                SEO-продвижения.</span
-              >
-            </div>
-            <div class="advantages__block">
-              <img
-                src="img/multiple.png"
-                alt="multiple"
-                class="advantages__block__image"
-              />
-              <strong class="advantages__block-title">Готовые решения</strong>
-              <span class="advantages__block__description"
-                >Готовые решения для различных ресурсов, от
-                узкоспециализированных торговых площадок до масштабных
-                коммерческих проектов.</span
-              >
-            </div>
-            <div class="advantages__block">
-              <img
-                src="img/user.png"
-                alt="user"
-                class="advantages__block__image"
-              />
-              <strong class="advantages__block-title">Глубокий анализ</strong>
-              <span class="advantages__block__description"
-                >Глубокий анализ целевой аудитории и статегии развития прямых
-                конкурентов.</span
-              >
-            </div>
-            <div class="advantages__block">
-              <img
-                src="img/google.png"
-                alt="google"
-                class="advantages__block__image"
-              />
-              <strong class="advantages__block-title"
-                >Актуализация ресурса</strong
-              >
-              <span class="advantages__block__description"
-                >Актуализация ресурса по мере корректировки поисковых
-                алгоритмов.</span
-              >
-            </div>
-            <div class="advantages__block">
-              <img
-                src="img/accounting.png"
-                alt="accounting"
-                class="advantages__block__image"
-              />
-              <strong class="advantages__block-title"
-                >Ежемесячные отчеты</strong
-              >
-              <span class="advantages__block__description"
-                >Ежемесячные отчёты о предпринятых усилиях и практических
-                результатах.</span
-              >
-            </div>
+          <div class="advantages__block">
+            <img data-src="img/multiple.png" src="a" alt="multiple" class="advantages__block__image" />
+            <strong class="advantages__block-title">Готовые решения</strong>
+            <span class="advantages__block__description">Готовые решения для различных ресурсов, от
+              узкоспециализированных торговых площадок до масштабных
+              коммерческих проектов.</span>
+          </div>
+          <div class="advantages__block">
+            <img data-src="img/user.png" src="a" alt="user" class="advantages__block__image" />
+            <strong class="advantages__block-title">Глубокий анализ</strong>
+            <span class="advantages__block__description">Глубокий анализ целевой аудитории и статегии развития прямых
+              конкурентов.</span>
+          </div>
+          <div class="advantages__block">
+            <img data-src="img/google.png" src="a" alt="google" class="advantages__block__image" />
+            <strong class="advantages__block-title">Актуализация ресурса</strong>
+            <span class="advantages__block__description">Актуализация ресурса по мере корректировки поисковых
+              алгоритмов.</span>
+          </div>
+          <div class="advantages__block">
+            <img data-src="img/accounting.png" src="a" alt="accounting" class="advantages__block__image" />
+            <strong class="advantages__block-title">Ежемесячные отчеты</strong>
+            <span class="advantages__block__description">Ежемесячные отчёты о предпринятых усилиях и практических
+              результатах.</span>
           </div>
         </div>
-      </section>
-      <section class="services">
-        <img src="img/icons8_Multiply2.png" alt="Multilpy2" class="Multilpy2" />
-        <img src="img/rectangle.png" alt="Rectangle" class="rectangle" />
-        <img src="img/circle.png" alt="Circle" class="circle" />
-        <div class="container">
-          <div class="section-title">
-            <h2 class="services-title">Наши Услуги</h2>
-            <p class="services__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud ex
-            </p>
+      </div>
+    </section>
+    <!--advantages-->
+    <section class="services">
+      <img data-src="img/icons8_Multiply2.png" src="a" alt="Multilpy2" class="Multilpy2" />
+      <img data-src="img/rectangle.png" src="a" alt="Rectangle" class="rectangle" />
+      <img data-src="img/circle.png" src="a" alt="Circle" class="circle" />
+      <div class="container">
+        <div class="section-title">
+          <h2 class="services-title">Наши Услуги</h2>
+          <p class="services__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud ex
+          </p>
+        </div>
+        <div class="services__blocks">
+          <div class="services__block">
+            <img data-src="img/increase.png" src="a" alt="increase" class="services__block__image" />
+            <strong class="services__block-title">Продвижение Сайтов</strong>
+            <span class="services__block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim</span>
           </div>
-          <div class="services__blocks">
-            <div class="services__block">
-              <img
-                src="img/increase.png"
-                alt="increase"
-                class="services__block__image"
-              />
-              <strong class="services__block-title">Продвижение Сайтов</strong>
-              <span class="services__block__description"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim</span
-              >
+          <div class="services__block">
+            <img data-src="img/Accounting2.png" src="a" alt="Accounting2" class="services__block__image" />
+            <strong class="services__block-title">Аудит Сайтов</strong>
+            <span class="services__block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim</span>
+          </div>
+          <div class="services__block">
+            <img data-src="img/Template.png" src="a" alt="Template" class="services__block__image" />
+            <strong class="services__block-title">Создание Сайтов</strong>
+            <span class="services__block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim</span>
+          </div>
+          <div class="services__block">
+            <img data-src="img/Commercial.png" src="a" alt="Commercial" class="services__block__image" />
+            <strong class="services__block-title">Контекстная Реклама</strong>
+            <span class="services__block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim</span>
+          </div>
+          <div class="services__block">
+            <img data-src="img/Trust.png" src="a" alt="Trust" class="services__block__image" />
+            <strong class="services__block-title">Поддержка</strong>
+            <span class="services__block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+              do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim</span>
+          </div>
+        </div>
+      </div>
+      <img data-src="img/angle.png" src="a" alt="Треугольник" class="angle" />
+      <img data-src="img/circle2.png" src="a" alt="Круг" class="circle2" />
+      <!--<img src="img/line2.png" alt="Линии" class="line2" />-->
+    </section>
+    <!--services-->
+    <section class="price" id="price">
+      <div class="container">
+        <div class="price__center">
+          <div class="price__half">
+            <div class="price__info">
+              <h2 class="price-title">Узнать стоимость</h2>
+              <form action="sendPrice.php" method="POST" class="form price__form">
+                <div class="input-group price__input-group"><label for="price-user-name"
+                    class="label form__label price__label">ИМЯ</label> <input type="text" autocomplete="off"
+                    name="userName" class="input form__input price__input" id="price-user-name"
+                    placeholder="Иван Иванов">
+                </div>
+                <div class="input-group price__input-group"><label for="price-user-email"
+                    class="label form__label price__label">E-MAIL</label> <input type="email" autocomplete="off"
+                    name="userEmail" class="input form__input price__input" id="price-user-email"
+                    placeholder="ivanov@gmail.com"></div>
+                <div class="input-group price__input-group"><label for="price-user-websayt"
+                    class="label form__label price__label">АДРЕС ВЕБ-САЙТА</label> <input type="text" autocomplete="off"
+                    name="userWebSayt" class="input form__input price__input" id="price-user-websayt"
+                    placeholder="tatsianapavlenko.ru"></div>
+                <div class="input-group price__input-group"><label for="price-user-message"
+                    class="label form__label price__label">СООБЩЕНИЕ</label> <input type="text" autocomplete="off"
+                    name="userMessage" class="input form__input price__input" id="price-user-message"
+                    placeholder="Введите Ваше сообщение"></div><button class="btn btn--primary price__btn">Узнать
+                  стоимость</button>
+              </form>
             </div>
-            <div class="services__block">
-              <img
-                src="img/Accounting2.png"
-                alt="Accounting2"
-                class="services__block__image"
-              />
-              <strong class="services__block-title">Аудит Сайтов</strong>
-              <span class="services__block__description"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim</span
-              >
-            </div>
-            <div class="services__block">
-              <img
-                src="img/Template.png"
-                alt="Template"
-                class="services__block__image"
-              />
-              <strong class="services__block-title">Создание Сайтов</strong>
-              <span class="services__block__description"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim</span
-              >
-            </div>
-            <div class="services__block">
-              <img
-                src="img/Commercial.png"
-                alt="Commercial"
-                class="services__block__image"
-              />
-              <strong class="services__block-title">Контекстная Реклама</strong>
-              <span class="services__block__description"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim</span
-              >
-            </div>
-            <div class="services__block">
-              <img
-                src="img/Trust.png"
-                alt="Trust"
-                class="services__block__image"
-              />
-              <strong class="services__block-title">Поддержка</strong>
-              <span class="services__block__description"
-                >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim</span
-              >
+            <div class="price__image"><img data-src="img/price2.png" src="a" alt="Цена" class="price__image__right">
             </div>
           </div>
         </div>
-        <img src="img/angle.png" alt="Треугольник" class="angle" />
-        <img src="img/circle2.png" alt="Круг" class="circle2" />
-        <img src="img/line2.png" alt="Линии" class="line2" />
-      </section>
-      <section class="price">
-        <img src="img/price.png" alt="Цена" />
-      </section>
-    </main>
+      </div>
+    </section>
+    <!--price-->
+    <section class="cases">
+      <div class="section-title">
+        <h2 class="cases-title">Наши Кейсы</h2>
+        <p class="cases__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex</p>
+      </div>
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper swiper-no-swiping" style="transform: translate3d(0px, 0px, 0px);">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slide-active" style="width: 986px;">
+              <div class="cases__repair">
+                <h2 class="cases__swiper-title">Ремонт телефонов</h2>
+                <div class="col-100">
+                  <div class="col-50 cases__image">
+                    <div class="result">
+                      <h3 class="cases__swiper-title-title">Результат за 4 месяца:</h3><span
+                        class="cases__swiper-title__description">+11 запросов у Яндекса, +10 у Google в топ-3</span>
+                      <span class="cases__swiper-title__description">+42 запросов у Яндекса, +55 у Google в топ-5</span>
+                      <span class="cases__swiper-title__description">+74 запросов у Яндекса, +119 у Google в
+                        топ-10</span>
+                    </div>
+                    <div class="dynamic">
+                      <h3 class="cases__swiper-title-title">Динамика улучшения видимости сайта:</h3><span
+                        class="cases__swiper-title__description">Посмотреть позиции до и после &gt;&gt;</span>
+                    </div>
+                    <div class="service">
+                      <h3 class="cases__swiper-title-title">Услуги:</h3>
+                      <div class="services__col"><img data-src="img/forward.png" src="a" alt="Стрелка"
+                          class="cases__swiper-title__image"> <span class="cases__swiper-title__description">Технический
+                          SEO аудит</span></div>
+                      <div class="services__col"><img data-src="img/forward.png" src="a" alt="Стрелка"
+                          class="cases__swiper-title__image"> <span class="cases__swiper-title__description">
+                          Оптимизация сайта</span></div>
+                      <div class="services__col"><img data-src="img/forward.png" src="a" alt="Стрелка"
+                          class="cases__swiper-title__image"> <span class="cases__swiper-title__description">Юзабилити
+                          аудит</span></div>
+                    </div>
+                  </div>
+                  <div class="col-50">
+                    <h3 class="cases__swiper-title__start">Статистика кол-ва переходов из поисковых систем</h3><a
+                      href="#" class="cases__swiper-title__start-description">Источник: Яндекс Метрика</a> <img
+                      data-src="img/card.png" src="a" alt="График" class="cases__swiper-title__stat__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-next" style="width: 986px;">
+              <div class="cases__repair">
+                <h2 class="cases__swiper-title">Ремонт телефонов</h2>
+                <div class="col-100">
+                  <div class="col-50 cases__image">
+                    <div class="result">
+                      <h3 class="cases__swiper-title-title">Результат за 4 месяца:</h3><span
+                        class="cases__swiper-title__description">+11 запросов у Яндекса, +10 у Google в топ-3</span>
+                      <span class="cases__swiper-title__description">+42 запросов у Яндекса, +55 у Google в топ-5</span>
+                      <span class="cases__swiper-title__description">+74 запросов у Яндекса, +119 у Google в
+                        топ-10</span>
+                    </div>
+                    <div class="dynamic">
+                      <h3 class="cases__swiper-title-title">Динамика улучшения видимости сайта:</h3><span
+                        class="cases__swiper-title__description">Посмотреть позиции до и после &gt;&gt;</span>
+                    </div>
+                    <div class="service">
+                      <h3 class="cases__swiper-title-title">Услуги:</h3>
+                      <div class="services__col"><img data-src="img/forward.png" src="a" alt="Стрелка"
+                          class="cases__swiper-title__image"> <span class="cases__swiper-title__description">Технический
+                          SEO аудит</span></div>
+                      <div class="services__col"><img data-src="img/forward.png" src="a" alt="Стрелка"
+                          class="cases__swiper-title__image"> <span class="cases__swiper-title__description">Технический
+                          SEO аудит</span></div>
+                      <div class="services__col"><img data-src="img/forward.png" src="a" alt="Стрелка"
+                          class="cases__swiper-title__image"> <span class="cases__swiper-title__description">Технический
+                          SEO аудит</span></div>
+                    </div>
+                  </div>
+                  <div class="col-50">
+                    <h3 class="cases__swiper-title__stat">Статистика кол-ва переходов из поисковых систем</h3><a
+                      href="#" class="cases__swiper-title__stat__description">Источник: Яндекс Метрика</a> <img
+                      data-src="img/card.png" src="a" alt="График" class="cases__swiper-title__stat__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-next" style="width: 986px;">
+              <div class="cases__repair">
+                <h2 class="cases__swiper-title">Ремонт телефонов</h2>
+                <div class="col-100">
+                  <div class="col-50 cases__image">
+                    <div class="result">
+                      <h3 class="cases__swiper-title-title">Результат за 4 месяца:</h3><span
+                        class="cases__swiper-title__description">+11 запросов у Яндекса, +10 у Google в топ-3</span>
+                      <span class="cases__swiper-title__description">+42 запросов у Яндекса, +55 у Google в топ-5</span>
+                      <span class="cases__swiper-title__description">+74 запросов у Яндекса, +119 у Google в
+                        топ-10</span>
+                    </div>
+                    <div class="dynamic">
+                      <h3 class="cases__swiper-title-title">Динамика улучшения видимости сайта:</h3><span
+                        class="cases__swiper-title__description">Посмотреть позиции до и после &gt;&gt;</span>
+                    </div>
+                    <div class="service">
+                      <h3 class="cases__swiper-title-title">Услуги:</h3>
+                      <div class="services__col"><img data-src="img/forward.png" src="a" alt="Стрелка"
+                          class="cases__swiper-title__image"> <span class="cases__swiper-title__description">Технический
+                          SEO аудит</span></div>
+                      <div class="services__col"><img data-src="img/forward.png" src="a" alt="Стрелка"
+                          class="cases__swiper-title__image"> <span class="cases__swiper-title__description">Технический
+                          SEO аудит</span></div>
+                      <div class="services__col"><img data-src="img/forward.png" src="a" alt="Стрелка"
+                          class="cases__swiper-title__image"> <span class="cases__swiper-title__description">Технический
+                          SEO аудит</span></div>
+                    </div>
+                  </div>
+                  <div class="col-50">
+                    <h3 class="cases__swiper-title__stat">Статистика кол-ва переходов из поисковых систем</h3><a
+                      href="#" class="cases__swiper-title__stat__description">Источник: Яндекс Метрика</a> <img
+                      data-src="img/card.png" src="a" alt="График" class="cases__swiper-title__stat__image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- If we need navigation buttons -->
+          <div class="swiper-button-prev double-prev swiper-button-disabled" tabindex="0" role="button"
+            aria-label="Previous slide" aria-disabled="true"></div>
+          <div class="swiper-button-next double-next" tabindex="0" role="button" aria-label="Next slide"
+            aria-disabled="false"></div><span class="swiper-notification" aria-live="assertive"
+            aria-atomic="true"></span>
+        </div>
+        <div class="cases__center"><button class="btn btn--primary cases__btn">Портфолио</button></div>
+      </div>
+    </section>
+    <!--cases-->
+    <section class="reviews">
+      <img data-src="img/curve2.png" src="a" alt="Кривая" class="curve2" />
+      <img data-src="img/Multiply3.png" src="a" alt="Крест" class="Multiply3" />
+      <img data-src="img/line3.png" src="a" alt="Линии" class="line3" />
+      <div class="section-title">
+        <h2 class="reviews-title">Отзывы клиентов</h2>
+        <p class="reviews__description">Если Вы хотите оставить отзыв о проделаной работе, какие-нибудь пожелания или
+          свои впечатления, то можете это сделать, написав на <a href="mailto:n2v@list.ru"
+            class="reviews__link">почту</a> или <a href="https://vk.com/glo_academy" target="_blank"
+            class="reviews__link">Вконтакте</a></p>
+      </div>
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="row">
+          <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper swiper-no-swiping" style="transform: translate3d(0px, 0px, 0px);">
+              <!-- Slides -->
+              <div class="swiper-slide swiper-slide-active" style="width: 1046px;">
+                <div class="reviews__human">
+                  <p class="reviews__human__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br
+                      class="none__br">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in<br class="none__br">reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
+                  <div class="human"><img data-src="img/client.png" src="a" alt="Клиент" class="human__image">
+                    <div class="human__description"><strong class="human__name">Иванна Иванова</strong> <span
+                        class="human__text">Сбербанк, CEO</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide swiper-slide-next" style="width: 1046px;">
+                <div class="reviews__human">
+                  <p class="reviews__human__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br
+                      class="none__br">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in<br class="none__br">reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
+                  <div class="human"><img data-src="img/client.png" src="a" alt="Клиент" class="human__image">
+                    <div class="human__description"><strong class="human__name">Иванна Иванова</strong> <span
+                        class="human__text">Сбербанк, CEO</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide" style="width: 1046px;">
+                <div class="reviews__human">
+                  <p class="reviews__human__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br
+                      class="none__br">Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in<br class="none__br">reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  </p>
+                  <div class="human"><img data-src="img/client.png" src="a" alt="Клиент" class="human__image">
+                    <div class="human__description"><strong class="human__name">Иванна Иванова</strong> <span
+                        class="human__text">Сбербанк, CEO</span></div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- If we need navigation buttons -->
+            <div class="swiper-button-prev double-prev swiper-button-disabled" tabindex="0" role="button"
+              aria-label="Previous slide" aria-disabled="true"></div>
+            <div class="swiper-button-next double-next" tabindex="0" role="button" aria-label="Next slide"
+              aria-disabled="false"></div><span class="swiper-notification" aria-live="assertive"
+              aria-atomic="true"></span>
+          </div>
+        </div>
+        <div class="reviews__center"><button class="btn btn--primary reviews__btn">Читать еще</button></div>
+      </div>
+      <img data-src="img/comma.png" src="a" alt="Ковычки" class="comma" />
+      <img data-src="img/circle3.png" src="a" alt="Круг" class="circle3" />
+      <img data-src="img/circle4.png" src="a" alt="Круг" class="circle4" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="js/main.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-  </body>
+    </section>
+    <!--reviews-->
+    <section class="news">
+      <div class="container">
+        <div class="section-title">
+          <h2 class="news-title">Последние новости</h2>
+          <p class="news__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ex</p>
+        </div>
+        <div class="swiper-container news__swiper swiper-container-initialized swiper-container-horizontal">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper swiper-no-swiping" style="transform: translate3d(0px, 0px, 0px);">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slide-active" style="width: 1170px;">
+              <div class="swiper__news__swiper"><img data-src="img/news.jpg" src="a" alt="news" class="swiper__image">
+                <div class="swiper__news"><span class="number">01</span> <span class="swiper__news__number">Апр</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-next" style="width: 1170px;">
+              <div class="swiper__news__swiper"><img data-src="img/news.jpg" src="f" alt="news" class="swiper__image">
+                <div class="swiper__news"><span class="number">02</span> <span class="swiper__news__number">Апр</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide" style="width: 1170px;">
+              <div class="swiper__news__swiper"><img data-src="img/news.jpg" src="a" alt="news" class="swiper__image">
+                <div class="swiper__news"><span class="number">03</span> <span class="swiper__news__number">Апр</span>
+                </div>
+              </div>
+            </div>
+          </div><!-- If we need navigation buttons -->
+          <div class="swiper-button-prev news-prev swiper-button-disabled" tabindex="0" role="button"
+            aria-label="Previous slide" aria-disabled="true"></div>
+          <div class="swiper-button-next news-next" tabindex="0" role="button" aria-label="Next slide"
+            aria-disabled="false"></div><span class="swiper-notification" aria-live="assertive"
+            aria-atomic="true"></span>
+        </div>
+        <div class="news__news">
+          <div class="card">
+            <div class="card__text"><strong class="card-title">Важнейшие факторы SEO в 2019 году</strong> <span
+                class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate velit.</span> <button class="btn btn--primary card__btn">Читать далее</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--news-->
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.validate.min.js"></script>
+  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.mask.min.js"></script>
+  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/wow.min.js"></script>
+  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/buttonUp.min.js"></script>
+</body>
+
 </html>
